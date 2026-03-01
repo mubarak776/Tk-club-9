@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win Gold - Dark</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap');
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: #0b0f1a; color: #e5e7eb; overflow-x: hidden; }
+        .gold-bg { background: linear-gradient(180deg, #fbbf24 0%, #d97706 100%); }
+        .dark-card { background-color: #161e2d; border: 1px solid #232d3f; }
+        .gold-text { color: #fbbf24; }
+        .btn-premium { background: linear-gradient(135deg, #fbbf24 0%, #b45309 100%); transition: 0.3s; box-shadow: 0 4px 15px rgba(180, 83, 9, 0.3); }
+        .btn-premium:active { transform: scale(0.95); }
+        .hidden { display: none; }
+        .auth-input { background: #0f172a; border: 1px solid #1e293b; padding: 14px; border-radius: 12px; width: 100%; outline: none; color: white; font-weight: bold; }
+        .auth-input:focus { border-color: #fbbf24; }
+    </style>
+</head>
+<body>
+
+    <div id="auth-page" class="min-h-screen flex items-center justify-center p-6 bg-[#0b0f1a]">
+        <div class="w-full max-w-sm">
+            <div class="text-center mb-10">
+                <img src="https://raw.githubusercontent.com/mubarak776/Takar-gas/main/image_12.png" class="w-20 h-20 mx-auto mb-3 object-contain">
+                <h1 class="text-3xl font-black gold-text italic">WIN GOLD</h1>
+                <p class="text-gray-500 text-[10px] tracking-[0.2em] uppercase">এক কন্যা | Premium Dark</p>
+            </div>
+
+            <div id="login-form" class="space-y-4">
+                <input type="number" id="login-phone" placeholder="আপনার ফোন নাম্বার" class="auth-input">
+                <input type="password" id="login-pass" placeholder="পাসওয়ার্ড" class="auth-input">
+                <button onclick="handleLogin()" class="w-full btn-premium py-4 rounded-2xl font-black text-white text-lg">লগইন করুন</button>
+                <p class="text-center text-sm text-gray-500">অ্যাকাউন্ট নেই? <span onclick="toggleAuth()" class="gold-text font-bold cursor-pointer">রেজিস্টার করুন</span></p>
+            </div>
+
+            <div id="register-form" class="space-y-4 hidden">
+                <input type="text" id="reg-name" placeholder="আপনার নাম" class="auth-input">
+                <input type="number" id="reg-phone" placeholder="ফোন নাম্বার" class="auth-input">
+                <input type="password" id="reg-pass" placeholder="নতুন পাসওয়ার্ড" class="auth-input">
+                <button onclick="handleRegister()" class="w-full btn-premium py-4 rounded-2xl font-black text-white text-lg">রেজিস্টার করুন</button>
+                <p class="text-center text-sm text-gray-500">অ্যাকাউন্ট আছে? <span onclick="toggleAuth()" class="gold-text font-bold cursor-pointer">লগইন করুন</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="dashboard-page" class="hidden pb-28">
+        <header class="p-4 flex justify-between items-center bg-[#0b0f1a] border-b border-gray-800 sticky top-0 z-50">
+            <div class="flex items-center gap-2">
+                <img src="https://raw.githubusercontent.com/mubarak776/Takar-gas/main/image_12.png" class="w-9 h-9">
+                <div>
+                    <h1 class="text-lg font-black gold-text leading-none italic uppercase">Win Gold</h1>
+                    <p class="text-[9px] text-gray-500 font-bold italic">এক কন্যা</p>
+                </div>
+            </div>
+            <a href="
+  
